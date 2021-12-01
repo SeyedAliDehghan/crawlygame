@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: #0a0d0a;
+}
+.header div:first-of-type{
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+}
+.header img{
+    width: 10rem;
+}
+.header span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.wlcMsg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.gameSection{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    justify-content: space-around;
+
+}
+
+.glassesSection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+    height: 50%;
+}
+.bot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50%;
+}
+.controller{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.controller{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.warning{
+    font-size: 2rem;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+
+}
+.controller{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.controller button{
+    width: 15rem;
+    height: 5rem;
+    border: 0;
+    outline: 0;
+    background-color: #ff417f;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    border-radius: 0.2rem;
+
+}
+.controller button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
