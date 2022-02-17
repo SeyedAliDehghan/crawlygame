@@ -47,13 +47,13 @@ leftButton.addEventListener('click',jump)
 function jumpRight(){
     // console.log(key[step][1]);
     if(step>=2){
-        botGlasses[step-2].src="img/glass.png";
-        botGlasses[0].src="img/glass.png";
-        topGlasses[step-2].src="img/glass.png";
-        topGlasses[0].src="img/glass.png";
+        botGlasses[step-2].src="../img/glass.png";
+        botGlasses[0].src="../img/glass.png";
+        topGlasses[step-2].src="../img/glass.png";
+        topGlasses[0].src="../img/glass.png";
     }
     if (key[step-1][1]===true){
-        topGlasses[step-1].src="img/glass_on.png";
+        topGlasses[step-1].src="../img/glass_on.png";
         step++;
     }else {
         lose();
@@ -63,13 +63,13 @@ function jumpRight(){
 }
 function jumpLeft(){
     if(step>=2){
-        topGlasses[step-2].src="img/glass.png";
-        topGlasses[0].src="img/glass.png";
-        botGlasses[step-2].src="img/glass.png";
-        botGlasses[0].src="img/glass.png";
+        topGlasses[step-2].src="../img/glass.png";
+        topGlasses[0].src="../img/glass.png";
+        botGlasses[step-2].src="../img/glass.png";
+        botGlasses[0].src="../img/glass.png";
     }
     if (key[step-1][0]===true){
-        botGlasses[step-1].src="img/glass_on.png";
+        botGlasses[step-1].src="../img/glass_on.png";
 
         step++;
     }else {
@@ -81,7 +81,7 @@ function jumpLeft(){
 function jump(event){
     
     if (step===1){
-        startImg.src="img/startplace.png";
+        startImg.src="../img/startplace.png";
     }
     if (step<=5){
         console.log(event.target)
@@ -121,7 +121,7 @@ function win(){
         confirmButtonText: 'restart game',
         backdrop: `
     rgba(0,0,123,0.4)
-    url("img/nyan-cat.gif")
+    url("../img/nyan-cat.gif")
     left top
     no-repeat
   `
@@ -130,11 +130,11 @@ function win(){
       })
 }
 function restartGame(){
-    startImg.src="img/startplace_on.png";
+    startImg.src="../img/startplace_on.png";
     for(let i=0;i<5;i++){
         topGlasses[i].style.opacity="1";
         botGlasses[i].style.opacity="1";
-        botGlasses[i].src="img/glass.png";
-        topGlasses[i].src="img/glass.png";
+        botGlasses[i].src="../img/glass.png";
+        topGlasses[i].src="../img/glass.png";
     }
 }
