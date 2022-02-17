@@ -53,7 +53,7 @@ function jumpRight(){
         topGlasses[0].src="../img/GLASS.png";
     }
     if (key[step-1][1]===true){
-        topGlasses[step-1].src="../img/glass_on.png";
+        topGlasses[step-1].src="../img/GLASS_on.png";
         step++;
     }else {
         lose();
@@ -69,7 +69,7 @@ function jumpLeft(){
         botGlasses[0].src="../img/GLASS.png";
     }
     if (key[step-1][0]===true){
-        botGlasses[step-1].src="../img/glass_on.png";
+        botGlasses[step-1].src="../img/GLASS.png";
 
         step++;
     }else {
