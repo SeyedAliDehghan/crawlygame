@@ -69,7 +69,7 @@ function jumpLeft(){
         botGlasses[0].src="../img/GLASS.png";
     }
     if (key[step-1][0]===true){
-        botGlasses[step-1].src="../img/GLASS.png";
+        botGlasses[step-1].src="../img/GLASS_on.png";
 
         step++;
     }else {
