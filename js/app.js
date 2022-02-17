@@ -81,7 +81,7 @@ function jumpLeft(){
 function jump(event){
     
     if (step===1){
-        startImg.src="../img/startplace.png";
+        startImg.src="../img/STARTPLACE.png";
     }
     if (step<=5){
         console.log(event.target)
