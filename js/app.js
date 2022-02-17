@@ -47,10 +47,10 @@ leftButton.addEventListener('click',jump)
 function jumpRight(){
     // console.log(key[step][1]);
     if(step>=2){
-        botGlasses[step-2].src="../img/glass.png";
-        botGlasses[0].src="../img/glass.png";
-        topGlasses[step-2].src="../img/glass.png";
-        topGlasses[0].src="../img/glass.png";
+        botGlasses[step-2].src="../img/GLASS.png";
+        botGlasses[0].src="../img/GLASS.png";
+        topGlasses[step-2].src="../img/GLASS.png";
+        topGlasses[0].src="../img/GLASS.png";
     }
     if (key[step-1][1]===true){
         topGlasses[step-1].src="../img/glass_on.png";
@@ -63,10 +63,10 @@ function jumpRight(){
 }
 function jumpLeft(){
     if(step>=2){
-        topGlasses[step-2].src="../img/glass.png";
-        topGlasses[0].src="../img/glass.png";
-        botGlasses[step-2].src="../img/glass.png";
-        botGlasses[0].src="../img/glass.png";
+        topGlasses[step-2].src="../img/GLASS.png";
+        topGlasses[0].src="../img/GLASS.png";
+        botGlasses[step-2].src="../img/GLASS.png";
+        botGlasses[0].src="../img/GLASS.png";
     }
     if (key[step-1][0]===true){
         botGlasses[step-1].src="../img/glass_on.png";
@@ -134,7 +134,7 @@ function restartGame(){
     for(let i=0;i<5;i++){
         topGlasses[i].style.opacity="1";
         botGlasses[i].style.opacity="1";
-        botGlasses[i].src="../img/glass.png";
-        topGlasses[i].src="../img/glass.png";
+        botGlasses[i].src="../img/GLASS.png";
+        topGlasses[i].src="../img/GLASS.png";
     }
 }
